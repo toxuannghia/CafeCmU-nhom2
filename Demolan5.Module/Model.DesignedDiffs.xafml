@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="Demolan5">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="@285868c0-71d9-433a-ae65-cb58df13416b" Caption="Quản lý" ImageName="BO_List" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="@8a9fb93e-361b-4d28-b3d3-7fabedb7c7a8" ViewId="Sanpham_ListView" Caption="Sản phẩm" ImageName="BO_Product" IsNewNode="True" />
+          <Item Id="@aefa5b16-d0d6-4e36-bf92-347be62a7f7a" ViewId="Hoadon_ListView" Caption="Hóa đơn" ImageName="BO_Invoice" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="24.1.7.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <ListView Id="Hoadon_HoadonCTs_ListView" NewItemRowPosition="Top" AllowEdit="True" />
+    <ListView Id="Hoadon_ListView" AllowEdit="True" NewItemRowPosition="Top" />
+    <ListView Id="HoadonCT_ListView" AllowEdit="True" NewItemRowPosition="Top" />
+    <ListView Id="Sanpham_ListView" AllowEdit="True" NewItemRowPosition="Top" />
+  </Views>
+</Application>
